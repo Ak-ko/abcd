@@ -13,3 +13,10 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('navbars_top');
     }
 })
+
+
+// For Subscribe button
+const accordion_button = document.querySelector('.accordionbuttons');
+accordion_button.addEventListener('click', () => {
+    accordion_button.classList.toggle('transparentBackground');
+})
