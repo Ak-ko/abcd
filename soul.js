@@ -2,7 +2,7 @@ const city = document.getElementById('city');
 const year = document.getElementById('year');
 const navbar = document.querySelector('.navbars');
 
-city.textContent = 'Yangon, Myanmar';
+city.textContent = 'Myanmar';
 year.textContent = new Date().getUTCFullYear();
 
 

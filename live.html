@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Video</title>
+</head>
+<body>    
+
+    
+    <div style="height:100vh;display:flex;justify-content:center;align-items:center;" class="video_connector"></div>
+
+
+    <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+        <script>            
+            callFrame = window.DailyIframe.createFrame({
+                iframeStyle: { 
+                    width:"500px",
+                    height:"500px",
+
+                    position:'fixed',
+                    top:0,
+                    left:0,                                         
+                },
+                showLeaveButton: true,
+                showFullscreenButton: true,
+                userName:"Guest",
+            });
+
+            console.log(callFrame);
+            
+            // live_section
+            callFrame.join({ url: 'https://zikariah.daily.co/zikariah' });
+
+            // https://zikariah.daily.co/hello-daily
+            // daily room url -> https://zikariah.daily.co/zikaria
+        </script>
+    </script>
+</body>
+</html>
+
+
