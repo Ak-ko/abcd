@@ -1,0 +1,215 @@
+:root {
+    --back-color: #f4f4f4;
+    --header-color: #ddd;
+}
+
+html {
+    box-sizing:border-box;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+
+    background-color:var(--back-color);
+}
+
+
+/* navbar */
+.navbars_top {
+    background-color:#fff;
+    box-shadow:0px 5px 10px 5px rgba(0,0,0,0.5);    
+}
+
+.logoimgs {
+    width:auto;
+    height:80px;
+}
+
+.searchboxes {
+    outline:none;
+    border:2px grave #000;
+}
+
+.searchboxes:focus {
+    box-shadow:0px 0px 0px;
+    outline:none;
+    border:1px solid #000;
+}
+
+.links_category {
+    position:relative;
+}
+
+.links_category::before, .links_category::after {
+    content:'';
+
+    width:100%;
+    height:1px;
+
+    position:absolute;
+    top:0;
+    left:-100%;
+
+    background-color:#000;
+    opacity:0;
+
+    transition:all 0.5s ease;
+}
+
+.links_category::after {
+    top:100%;
+    left:100%;
+}
+
+.links_category:hover::before {
+    top:0;
+    left:0;
+
+    opacity:1;
+}
+
+.links_category:hover::after {
+    top:100%;
+    left:0;
+
+    opacity:1;
+}
+
+/* Home Page */
+.top_containers {
+    margin-top:200px;
+}
+
+.horizontal_top_container {
+    display:none;
+}
+
+.intro_paragraphs {
+    line-height:2rem;
+    letter-spacing:1.5px;
+}
+
+.sayar_name {
+    font-style:italic;
+    font-size:1.3rem;
+}
+
+.cancelbtns {
+    outline:none;
+    border:none;     
+}
+
+.cancelbtns:hover {    
+    border-bottom:1px solid #000;
+    outline:none;
+}
+
+.subscribebtns {
+    /* border:none;   */
+    /* box-shadow:6px 6px 10px 3px rgba(0,0,0,0.4); */
+    /* transition:all 0.5s;     */
+}
+
+.subscribebtns:focus {
+    box-shadow:0 0 0;
+}
+
+.headers {
+    color:var(--header-color);
+    letter-spacing:2px;
+}
+
+.headerunderline {
+    width:180px;
+    height:2px;
+
+    background-color:var(--header-color);
+}
+
+.degrees {
+    width:auto;
+    height:300px;
+
+    filter:grayscale(100%);
+    cursor:default;
+    border:10px groove var(--header-color);
+}
+
+.degrees:hover {
+    filter:grayscale(0);
+}
+
+.footerunderline {
+    width:100px;
+    height:1px;
+
+    background-color:#000;
+}
+
+.contact_links {
+    text-decoration:none;
+    color:#000;
+}
+
+.messangers {
+    width:20px;
+}
+
+.contact_links:hover {
+    text-decoration:underline;
+    color:#000;
+}
+
+.phones {
+    color:green;
+}
+
+.footer_copyright_texts {
+    letter-spacing:1px;
+}
+
+/* Media Query: For Tablet */
+@media screen and (max-width:600px) {
+    .logoimgs {
+        width:125px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .intro_paragraphs {
+        width:100%!important;   
+    }
+}
+/* Media Query: For mobile phones */
+@media screen and (max-width:600px) {
+    body {
+        text-align:center;
+        font-size:0.8rem;
+    }
+
+    .logoimgs {
+        width:125px;
+        height:auto;
+    }
+
+    .intro_paragraphs {
+        width:100%!important;
+        
+    }
+
+    .vr {
+        display: none!important;
+    }
+
+    .top_containers {
+        margin-top:150px;
+    }
+
+    .horizontal_top_container {
+        display:block;
+    }
+    
+}
