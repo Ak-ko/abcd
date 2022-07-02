@@ -189,12 +189,12 @@ body {
     background-image:var(--bs-accordion-btn-icon); /* this is a bootstrap variable */
 }
 
-.footer_section {
-    
+.additional_section {
+    width:auto;
+    height:150px;
 }
 
 /* Media Query: For Tablets */
-
 @media screen and (max-width:1000px) {
     .intro_paragraphs {
         width:100%!important;   
