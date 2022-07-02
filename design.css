@@ -188,22 +188,22 @@ body {
 .accordion-button:not(.collapsed)::after {
     background-image:var(--bs-accordion-btn-icon); /* this is a bootstrap variable */
 }
-/* Media Query: For Tablet */
-@media screen and (max-width:600px) {
-    .logoimgs {
-        width:125px;
-        height:auto;
-    }
+
+.footer_section {
+    
 }
+
+/* Media Query: For Tablets */
 
 @media screen and (max-width:1000px) {
     .intro_paragraphs {
         width:100%!important;   
     }
 }
-/* Media Query: For mobile phones */
+/* Media Query: For mobile phones */    
 @media screen and (max-width:600px) {
-    body {
+    
+    .text_centers {
         text-align:center;
         font-size:0.8rem;
     }
@@ -228,6 +228,10 @@ body {
 
     .horizontal_top_container {
         display:block;
+    }
+
+    .content_area_subscribe {
+        font-size:0.8rem;
     }
     
 }
