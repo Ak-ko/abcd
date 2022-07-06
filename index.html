@@ -14,6 +14,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- custom css  -->
     <link href="./design.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,7 +28,7 @@
     <!-- nav section -->
     <section id="navbar">
         <nav class="navbar navbar-expand-lg fixed-top navbars">
-            <div class="container-fluid">
+            <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="./logo.png" class="logoimgs" />
               </a>
@@ -38,31 +44,26 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link me-4 links_category active" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link me-4 links_category" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link me-4 links_category" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown dropdown-center">
                       <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Classes
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="#">Class 1</a></li>
-                        <li><a class="dropdown-item" href="#">Class 2</a></li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#">Class 3</a></li>
+                        <li><a class="dropdown-item" href="live.html">Live Section</a></li>
                       </ul>
                     </li>
                   </ul>
-                  <form class="d-flex" role="search">
+                  <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2 searchboxes" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-dark border-0 rounded-circle searchbtns" type="submit">
                         <i class="bi bi-search searchicons"></i>
                     </button>
-                  </form>
+                  </form> -->
                 </div>
               </div>
             </div>
@@ -75,12 +76,12 @@
       <div class="container top_containers">
         <div class="row">
           <div class="col-xl-5 col-lg-5 col-md-6 col-12">                      
-            <p class="intro_paragraphs mt-lg-3 mt-md-3 mt-0">
+            <p class="intro_paragraphs mt-lg-3 mt-md-3 mt-0 animate__animated animate__bounceInLeft">
               <span class="sayar_name">Mawlawi Hafiz Qari Muhammad Zakariya Sulaimani (Bago-Daik U)</span> ဦးစည်းသော သင်တန်း ဖြစ်ပါသည်။ <b>မိတ်ဆွေတို.အတွက်</b> အိမ်မှာနေရင်း လွယ်လွယ်ကူကူနဲ့ ထိထိ ရောက်ရောက်လေ့လာနိုင်စေရန် ရည်ရွယ်၍ <b>online</b> ဖွင့်လှစ်ရခြင်းဖြစ်ပါသည်။              
             </p>
             <div class="buttoncontainers">
-              <button class="btn rounded-0 px-lg-2 px-md-4 px-1 cancelbtns">Cancel</button>
-              <a href="subscribe.html" class="btn btn-outline-dark rounded-0 ms-3 px-lg-4 px-md-4 px-5 subscribebtns">Subscribe</a>
+              <button class="btn rounded-0 px-lg-2 px-md-4 px-1 animate__animated animated__ cancelbtns">Cancel</button>
+              <a href="subscribe.html" class="btn btn-outline-dark rounded-0 ms-3 px-lg-4 px-md-4 px-5 animate__animated animate__fadeIn subscribebtns">Subscribe</a>
             </div>
           </div>
           <div class="col-lg-1 col-md-1">            
@@ -99,10 +100,10 @@
     <!-- degree -->
     <section id="degreesection">
       <div class="container-fluid bg-dark mt-5 py-4">
-        <h2 class="text-center headers">My Degrees</h2>        
+        <h2 class="text-center headers">Degrees</h2>        
         <div class="headerunderline mx-auto mt-3"></div>
 
-        <div class="container text-center mt-5 py-4">
+        <div class="container text-center mt-5 py-4 animate__animated animate__fadeInDown">
           <div class="row gy-4">
             <div class="col-lg-3 col-md-6 col-12">
               <img src="./sayar1.png" alt="sayar'sdegree" title="degree" class="degrees" />

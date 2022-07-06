@@ -4,40 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Video</title>
-</head>
-<body>    
+    <title>Mawlawie_Kari_Haviz M.Zikariah</title>
+    <!-- icon -->
+    <link href="./icon.png" rel="icon" type="img/png" sizes="16x16" />
 
-    
-    <div style="height:100vh;display:flex;justify-content:center;align-items:center;" class="video_connector"></div>
+
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- custom css  -->
+    <link href="./design.css" rel="stylesheet" type="text/css" />
+    <style>
+        .footer {
+              position:fixed;
+              bottom:0;
+              left:0; 
+              right:0;
+              z-index:1;
+          }
+
+          .navbars {
+            box-shadow:1px 1px 10px -8px rgba(0,0,0,0.7);
+            background-color:#f4f4f4;
+          }
+    </style>
+</head>
+<body>
+
+    <!-- nav section -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top navbars">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./logo.png" class="logoimgs" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <!-- Need to change the toggler button -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link me-4 links_category" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link me-4 links_category" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-center">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Classes
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="live.html">Live Section</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2 searchboxes" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark border-0 rounded-circle searchbtns" type="submit">
+                        <i class="bi bi-search searchicons"></i>
+                    </button>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- intro to live section -->
+    <div class="container mt-5 pt-5">
+        <h4 class="mt-5 pt-3 text-center">Salam, စာသင်ခန်းကို join လိုရပါတယ် ဗျ</h4>
+    </div>
+
+    <!-- footer -->
+    <footer id="footersection">     
+
+        <div class="footer text-center py-3 footer_copyright_texts bg-dark text-white">        
+          Copy Right &copy; All rights reserved <span id="year_section"></span>.
+        </div>
+      </footer>
 
 
     <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
         <script>            
             callFrame = window.DailyIframe.createFrame({
-                iframeStyle: { 
-                    width:"500px",
-                    height:"500px",
-
-                    position:'fixed',
-                    top:0,
-                    left:0,                                         
+                iframeStyle: {                                         
+                    width:"auto",
+                    height:"500px",                    
+                    // marginTop:"100px",                    
+                    display:"block",
+                    textAlign:"center",
+                    margin:"auto",
+                    marginTop:"50px",                    
+                    marginBottom:"100px",                                        
                 },
                 showLeaveButton: true,
                 showFullscreenButton: true,
                 userName:"Guest",
             });
-
-            console.log(callFrame);
             
             // live_section
-            callFrame.join({ url: 'https://zikariah.daily.co/zikariah' });
-
-            // https://zikariah.daily.co/hello-daily
-            // daily room url -> https://zikariah.daily.co/zikaria
+            callFrame.join({ url: 'https://zikariah.daily.co/zikariah' });           
         </script>
     </script>
 </body>
 </html>
+
 
 
