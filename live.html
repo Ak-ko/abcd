@@ -29,7 +29,15 @@
               right:0;
               z-index:1;
           }
+          .text_header {
+            text-shadow:10px 10px 2px rgba(0,0,0,0.5);
+            cursor:pointer;
+            transition:all 0.5s ease-in;
+          }
 
+          .text_header:hover {
+              text-shadow:0px 0px 0px #000;              
+          }
           .navbars {
             box-shadow:1px 1px 10px -8px rgba(0,0,0,0.7);
             background-color:#f4f4f4;
@@ -85,7 +93,7 @@
 
     <!-- intro to live section -->
     <div class="container mt-5 pt-5">
-        <h4 class="mt-5 pt-3 text-center">Salam, စာသင်ခန်းကို join လိုရပါတယ် ဗျ</h4>
+        <h4 class="mt-5 pt-3 text-center text_header">Salam, စာသင်ခန်းကို join လိုရပါတယ် ဗျ</h4>
     </div>
 
     <!-- footer -->
@@ -116,7 +124,11 @@
             });
             
             // live_section
-            callFrame.join({ url: 'https://zikariah.daily.co/zikariah' });           
+            callFrame.join({ url: 'https://zikariah.daily.co/zikariah' });    
+            
+            // add year to footer
+            const year = document.querySelector('#year_section');
+            year.textContent = new Date().getFullYear();
         </script>
     </script>
 </body>
