@@ -204,14 +204,9 @@ body {
     .intro_paragraphs {
         width:100%!important;   
     }
-
-    /* .additional_section {
-        width:auto;
-        height:250px;
-    } */
 }
 /* Media Query: For mobile phones */    
-@media screen and (max-width:600px) {
+@media screen and (max-width:760px) {
     
     .text_centers {
         text-align:center;
