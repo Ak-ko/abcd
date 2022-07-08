@@ -17,6 +17,9 @@ body {
 
 
 /* navbar */
+.navbars {
+    background-color:#f4f4f4;
+}
 .navbars_top {
     background-color:#fff;
     box-shadow:0px 5px 10px 5px rgba(0,0,0,0.5);    

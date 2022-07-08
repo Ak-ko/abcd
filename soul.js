@@ -1,11 +1,8 @@
-const city = document.getElementById('city');
-const year = document.getElementById('year');
+"use strict";
+
 const navbar = document.querySelector('.navbars');
 const degree_section = document.querySelector('.degree_sections');
 const navbar_container = document.querySelector('.navbar_container');
-
-city.textContent = 'Myanmar';
-year.textContent = new Date().getUTCFullYear();
 
 
 window.addEventListener('scroll', () => {   
