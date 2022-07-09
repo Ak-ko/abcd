@@ -47,8 +47,8 @@
 <body>
 
     <!-- preloader -->
-    <div class="preloader_container" hidden>
-      <img src="./preloader.svg" alt="preloader" class="preloader" id="preloader" />
+    <div class="preloader_container" id="preloader_container">
+      <img src="./preloader.svg" alt="preloader" class="preloader" />
     </div>
 
     <!-- nav section -->
@@ -107,7 +107,7 @@
         <div class="footer text-center py-3 footer_copyright_texts bg-dark text-white">        
           Copy Right &copy; All rights reserved <span id="year_section"></span>.
         </div>
-      </footer>
+    </footer>
 
 
     <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
@@ -134,6 +134,21 @@
             // add year to footer
             const liveYear = document.querySelector('#year_section');
             liveYear.textContent = new Date().getFullYear();
+
+            const livePreLoaderContainer = document.getElementById('preloader_container');
+
+            // unhide the preloader
+            function showPreloader() {
+              livePreLoaderContainer.hidden = false;
+            }
+
+            function hidePreloader() {
+              livePreLoaderContainer.hidden = true;
+            }
+
+            showPreloader();
+            // whiel loaded end -> hide that
+            window.addEventListener('load', hidePreloader);
         </script>
     </script>
 </body>

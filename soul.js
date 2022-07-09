@@ -3,7 +3,8 @@
 const navbar = document.querySelector('.navbars');
 const degree_section = document.querySelector('.degree_sections');
 const navbar_container = document.querySelector('.navbar_container');
-const pre_loader = document.getElementById('#preloader_container    ');
+
+let preLoaderContainer = document.getElementById('preloader_container');
 
 
 window.addEventListener('scroll', () => {   
@@ -14,8 +15,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// unhide the preloader
 function showPreloader() {
-    pre_loader.hidden = false;
+    preLoaderContainer.hidden = false;
 }
 
-window.addEventListener('DOMContentLoaded', showPreloader);
+function hidePreloader() {
+    preLoaderContainer.hidden = true;
+}
+
+showPreloader();
+// whiel loaded end -> hide that
+window.addEventListener('load', hidePreloader);

@@ -46,145 +46,141 @@
     </head>
     <body>
 
-      <!-- preloader -->
-      <div class="preloader_container" hidden>
-        <img src="./preloader.svg" alt="preloader" class="preloader" id="preloader" />
-      </div>
-        
+          <!-- preloader -->
+          <div class="preloader_container" id="preloader_container">
+            <img src="./preloader.svg" alt="preloader" class="preloader" />
+          </div>
+              
 
-       <!-- nav section -->
-       <section id="navbar">
-        <nav class="navbar navbar-expand-lg fixed-top navbars">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./logo.png" class="logoimgs" />
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <!-- Need to change the toggler button -->
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Assalmualikum</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-lg-5 me-md-5 me-0">
-                    <li class="nav-item">
-                      <a class="nav-link me-4 links_category" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link me-4 links_category" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Classes
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="live.html">Live Section</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2 searchboxes" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark border-0 rounded-circle searchbtns" type="submit">
-                        <i class="bi bi-search searchicons"></i>
+          <!-- nav section -->
+          <section id="navbar">
+              <nav class="navbar navbar-expand-lg fixed-top navbars">
+                  <div class="container">
+                    <a class="navbar-brand" href="#">
+                      <img src="./logo.png" class="logoimgs" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <!-- Need to change the toggler button -->
+                      <span class="navbar-toggler-icon"></span>
                     </button>
-                  </form> -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Assalmualikum</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-lg-5 me-md-5 me-0">
+                          <li class="nav-item">
+                            <a class="nav-link me-4 links_category" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link me-4 links_category" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Classes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                              <li><a class="dropdown-item" href="live.html">Live Section</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                          <input class="form-control me-2 searchboxes" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-dark border-0 rounded-circle searchbtns" type="submit">
+                              <i class="bi bi-search searchicons"></i>
+                          </button>
+                        </form> -->
+                      </div>
+                    </div>
+                  </div>
+              </nav>
+          </section>  
+
+          <!-- main content -->
+          <main id="main-content" class="mt-lg-5 mt-md-5 mt-3 pt-lg-5 pt-md-5 pt-3 content_area_subscribe">
+              <div class="container mt-5 pt-5">
+
+                <!-- header section -->
+                <div id="header_section" class="ms-3 mb-3">
+                  <p class="text-start">ကျွန်တော် သင်ကြားသော <span class="fw-bold">နေရာများ</span> ကို စနစ်တကျ ဖော်ပြပေးထားပါသည် ခင်ဗျာ</p>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                  <!-- 1st one -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b>Zoom Class & Facebook Page</b>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>                    
+                            တစ်ယောက်ချင်း <b>zoom</b> မှ တဆင့် လည်း သင်ပေးပါတယ် ခင်ဗျာ <b>သင်တန်းကြေး</b> ကို <b>messanger</b> ဖြင့်  သော်လည်းကောင်း <b>ဖုန်း</b> ဖြင့်သော်လည်းကောင်း မေးမြန်းနိုင်ပါတယ်ဗျာ<br/>
+
+                            <b>Page- </b><a href="https://www.facebook.com/ALFurqan123/" target="_blank" class="link-secondary">Facebook</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2nd one -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <b>Application</b>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>
+                          စာများကို သင်တန်းချိန်ပြင်ပတွင် လေ့လာနိုင်ရန် app လေးရှိပါတယ်ဗျာ<br/>
+                          <b>Downloads - </b>
+                          <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings" target="_blank" class="link-secondary">PlayStore</a>
+                          <a href="https://m.apkpure.com/zoom-cloud-meetings/us.zoom.videomeetings" target="_blank" class="ms-2 link-secondary">APKpure</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <b>YouTube & Telegram Channels</b>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>
+                          မိတ်ဆွေများ လွယ်ကူစွာသင်ခန်းစာလေ့လာလိုရအောင် ကျွန်တော် <b>YouTube channel</b> လေးဖန်းတီးလိုက်ပါတယ်<br/>
+                          <b>Telegram channel</b> လေးလည်းရှိပါတယ် ဗျ<br/> 
+                          <b>Channels- </b><a href="https://youtube.com/channel/UCQ5HoYqNr_Y2TeHZTPqDPIg" target="_blank" class="link-secondary">YouTube</a><a href="https://t.me/+bWe9r77p4zI0MDll" target="_blank" class="link-secondary ms-2">Telegram</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="mt-3 text_list_container animate__animated animate__fadeInUp" style="animation-delay:0.95s;">
+                    <ul>
+                        <li>
+                          <span class="fw-bold">သင်ကြားမှု</span> ပိုင်းမှာ <span class="fw-bold">အပိုအလို မရှိ</span> တိတိကျကျဖြင့် ပိုင်ပိုင်နိုင်နိုင် သင်ပေးနိုင်ပါသည် ခင်ဗျာ
+                        </li>
+                        <li class="my-3">မိဘများအနေနဲ့ ယုံကြည်စိတ်ချစွာ အပ်နှမ်းနိုင်ပါသည်</li>
+                        <li class="mb-3">Application ကိုလည်း စိတ်ချ ယုံကြည်စွာ အသုံးပြုနိုင်မည် ဖြစ်ပါသည်  ဗျာ</li>                  
+                    </ul>
                 </div>
               </div>
+          </main>
+
+
+          <!-- footer -->
+          <footer id="footersection">     
+
+            <div class="footer text-center py-3 footer_copyright_texts bg-dark text-white">        
+              Copy Right &copy; All rights reserved <span id="year_section"></span>.
             </div>
-        </nav>
-       </section>  
-
-    <!-- main content -->
-    <main id="main-content" class="mt-lg-5 mt-md-5 mt-3 pt-lg-5 pt-md-5 pt-3 content_area_subscribe">
-        <div class="container mt-5 pt-5">
-
-          <!-- header section -->
-          <div id="header_section" class="ms-3 mb-3">
-            <p class="text-start">ကျွန်တော် သင်ကြားသော <span class="fw-bold">နေရာများ</span> ကို စနစ်တကျ ဖော်ပြပေးထားပါသည် ခင်ဗျာ</p>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <!-- 1st one -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <b>Zoom Class & Facebook Page</b>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <span>                    
-                      တစ်ယောက်ချင်း <b>zoom</b> မှ တဆင့် လည်း သင်ပေးပါတယ် ခင်ဗျာ <b>သင်တန်းကြေး</b> ကို <b>messanger</b> ဖြင့်  သော်လည်းကောင်း <b>ဖုန်း</b> ဖြင့်သော်လည်းကောင်း မေးမြန်းနိုင်ပါတယ်ဗျာ<br/>
-
-                      <b>Page- </b><a href="https://www.facebook.com/ALFurqan123/" target="_blank" class="link-secondary">Facebook</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2nd one -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <b>Application</b>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <span>
-                    စာများကို သင်တန်းချိန်ပြင်ပတွင် လေ့လာနိုင်ရန် app လေးရှိပါတယ်ဗျာ<br/>
-                    <b>Downloads - </b>
-                    <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings" target="_blank" class="link-secondary">PlayStore</a>
-                    <a href="https://m.apkpure.com/zoom-cloud-meetings/us.zoom.videomeetings" target="_blank" class="ms-2 link-secondary">APKpure</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed accordionbuttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <b>YouTube & Telegram Channels</b>
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <span>
-                    မိတ်ဆွေများ လွယ်ကူစွာသင်ခန်းစာလေ့လာလိုရအောင် ကျွန်တော် <b>YouTube channel</b> လေးဖန်းတီးလိုက်ပါတယ်<br/>
-                    <b>Telegram channel</b> လေးလည်းရှိပါတယ် ဗျ<br/> 
-                    <b>Channels- </b><a href="https://youtube.com/channel/UCQ5HoYqNr_Y2TeHZTPqDPIg" target="_blank" class="link-secondary">YouTube</a><a href="https://t.me/+bWe9r77p4zI0MDll" target="_blank" class="link-secondary ms-2">Telegram</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-3 text_list_container animate__animated animate__fadeInUp" style="animation-delay:0.95s;">
-              <ul>
-                  <li>
-                    <span class="fw-bold">သင်ကြားမှု</span> ပိုင်းမှာ <span class="fw-bold">အပိုအလို မရှိ</span> တိတိကျကျဖြင့် ပိုင်ပိုင်နိုင်နိုင် သင်ပေးနိုင်ပါသည် ခင်ဗျာ
-                  </li>
-                  <li class="my-3">မိဘများအနေနဲ့ ယုံကြည်စိတ်ချစွာ အပ်နှမ်းနိုင်ပါသည်</li>
-                  <li class="mb-3">Application ကိုလည်း စိတ်ချ ယုံကြည်စွာ အသုံးပြုနိုင်မည် ဖြစ်ပါသည်  ဗျာ</li>                  
-              </ul>
-          </div>
-        </div>
-    </main>
-
-    <!-- <hr class="horizontal_row" /> -->
-
-    <!-- addition section -->
-    <!-- <div class="additional_section"></div> -->
-
-    <!-- footer -->
-    <footer id="footersection">     
-
-      <div class="footer text-center py-3 footer_copyright_texts bg-dark text-white">        
-        Copy Right &copy; All rights reserved <span id="year_section"></span>.
-      </div>
-    </footer>
+          </footer>
 
 
         <!-- JavaScript Bundle with Popper -->
@@ -197,6 +193,21 @@
         <script>          
               const subscribeYear = document.querySelector('#year_section');
               subscribeYear.textContent = new Date().getFullYear();
+
+              const subPreLoaderContainer = document.getElementById('preloader_container');
+
+              // unhide the preloader
+              function showPreloader() {
+                subPreLoaderContainer.hidden = false;
+              }
+
+              function hidePreloader() {
+                subPreLoaderContainer.hidden = true;
+              }
+
+              showPreloader();
+              // whiel loaded end -> hide that
+              window.addEventListener('load', hidePreloader);
         </script>
 
         

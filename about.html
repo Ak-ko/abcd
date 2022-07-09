@@ -75,10 +75,10 @@
       </style>
 </head>
 <body>
-
+    
     <!-- preloader -->
-    <div class="preloader_container" hidden>
-      <img src="./preloader.svg" alt="preloader" class="preloader" id="preloader" />
+    <div class="preloader_container" id="preloader_container">
+      <img src="./preloader.svg" alt="preloader" class="preloader" />
     </div>
     
     <!-- nav section -->
@@ -170,6 +170,22 @@
      <script>
         const aboutYear = document.querySelector('#year_section');
         aboutYear.textContent = new Date().getFullYear();
+
+
+        const aboutPreLoaderContainer = document.getElementById('preloader_container');
+
+        // unhide the preloader
+        function showPreloader() {
+          aboutPreLoaderContainer.hidden = false;
+        }
+
+        function hidePreloader() {
+          aboutPreLoaderContainer.hidden = true;
+        }
+
+        showPreloader();
+        // whiel loaded end -> hide that
+        window.addEventListener('load', hidePreloader);
     </script>
 
         
