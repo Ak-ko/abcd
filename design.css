@@ -194,6 +194,30 @@ body {
     background-image:var(--bs-accordion-btn-icon); /* this is a bootstrap variable */
 }
 
+
+.preloader_container {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    z-index:9999;
+
+    background-color:rgba(255,255,255,1);
+}
+/* preloader */
+.preloader {     
+    position:fixed;
+    top:50%;
+    left:50%;
+
+    width:200px;
+    height:auto;
+    transform:translate(-50%, -50%);
+}
+
+
 /* .additional_section {
     width:auto;
     height:250px;

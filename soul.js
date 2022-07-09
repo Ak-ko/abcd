@@ -3,6 +3,7 @@
 const navbar = document.querySelector('.navbars');
 const degree_section = document.querySelector('.degree_sections');
 const navbar_container = document.querySelector('.navbar_container');
+const pre_loader = document.getElementById('#preloader_container    ');
 
 
 window.addEventListener('scroll', () => {   
@@ -13,3 +14,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function showPreloader() {
+    pre_loader.hidden = false;
+}
+
+window.addEventListener('DOMContentLoaded', showPreloader);
