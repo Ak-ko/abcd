@@ -28,6 +28,12 @@ body {
 .logoimgs {
     width:auto;
     height:80px;
+    filter:grayscale(100%);
+    transition:all 0.45s ease;
+}
+
+.logoimgs:hover {
+    filter:grayscale(0);
 }
 
 .searchboxes {
