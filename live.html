@@ -11,20 +11,46 @@
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
-    <style>
 
+    <style>
+        main {
+            margin-bottom:600px;
+        }
     </style>
 </head>
-<body>
+<body class="bg-dark">
 
     <main class="container">
-        <h2 class="header"></h2>
-        <h4 class="sub__header">Learn Quran Tajweed</h4>
+        <h2 class="header text-center my-3 text-success">السلام عليكم ورحمة ٱلله وبركاته</h2>
+        <h4 class="text-center text-secondary">Learn <span class="text-light">
+            Quran Tajweed
+        </span></h4>
 
+        <div class="container row mt-5 mb-2">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-md-0 mb-sm-2 mb-2 text-lg-center text-md-center text-start">
+                <p class="text-light mb-2">
+                    Qari quran Zoom meeting class ည 9 နာရီ
+                    
+                    <a href="https://m.me/j/AbaeVbleSpEbC63e/" class="d-block">Join Messanger</a>
+                </p>
+            </div>
 
-        <span>Join Here!</span>
-    </main>
-    
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-lg-center text-md-center text-start">
+                <p class="text-light">
+                    သင်တန်သားများ ဒီ gp ၂ခု join ပေးပါ သင်ပြီသာ Video တွေပြန်လည်လေ့ကျင့်ရန်
+                    <a href="https://t.me/+Op9b-rIRukhlYWZl" class="d-block mt-2">Telegram Group</a>
+                </p>
+            </div>
+        </div>       
+        
+        <div class="container text-center mt-5 pe-5">            
+                <div class="pe-5">
+                    <p class="text-white m-0 mb-2">YouTube မှာလည်း <span class="text-success">free</span> သင်ပေးပါတယ်</p>
+                
+                    <a href="https://youtube.com/channel/UCQ5HoYqNr_Y2TeHZTPqDPIg" class="d-block ms-">Youtube By Qari Muhammad Zakariya</a>            
+                </div>
+        </div>
+    </main>   
 
     <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
 
@@ -34,11 +60,16 @@
             showLeaveButton: true,
             showFullscreenButton: true,
             iframeStyle: {
-                position: 'fixed',
-                top: '0',
-                left: '0',
-                width: '100%',
-                height: '100%',
+               position:"absolute",
+               top:"55%",
+               left:"50%",
+               right:"0",
+               bottom:"0",
+
+               width:"55%",
+               height:"65%",
+
+               transform:"translateX(-50%)",
             },
         });
         callFrame.join({ url: url });
