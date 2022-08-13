@@ -27,3 +27,5 @@ function hidePreloader() {
 showPreloader();
 // whiel loaded end -> hide that
 window.addEventListener('load', hidePreloader);
+
+
