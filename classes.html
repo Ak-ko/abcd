@@ -29,20 +29,11 @@
               right:0;
               z-index:1;
           }
-          /* .text_header {
-            text-shadow:10px 10px 2px rgba(0,0,0,0.5);
-            cursor:pointer;
-            transition:all 0.5s ease-in;
-          }
-
-          .text_header:hover {
-              text-shadow:0px 0px 0px #000;              
-          } */
           
           .navbars {
             box-shadow:1px 1px 10px -8px rgba(0,0,0,0.7);
             background-color:#f4f4f4;
-            z-index:2;
+            z-index:3;
           }     
 
           .zoom-btn {
@@ -57,9 +48,9 @@
           }
 
           .livebtns {
-            width:30%;
+            width:50%;
             max-width:100px;
-            height:120px;
+            height:150px;            
 
             background-color:#3F7CC0;
             position:relative;
@@ -71,7 +62,7 @@
         }
         
         .livebtns a {
-            background-color:#6697CC;
+            background-color:rgb(255, 186, 0);
             position:absolute;
             top:50%;
             left:50%;
@@ -85,15 +76,18 @@
             z-index:1;
 
             text-decoration:none;
-            color:#fff;
+            color:rgb(0, 131, 45);
+            font-weight:bold;
 
             transition:all 0.5s;
         }
 
         .livebtns a span {
             display:inline-block;
-            width:40px;
-            height:40px;            
+            width:50px;
+            height:50px;
+
+            padding:2rem;
 
             border-radius:50%;
             border:1px solid #000;
@@ -102,9 +96,9 @@
             justify-content:center;
             align-items:center;
             
-            margin:5% auto;
+            margin:7% auto;
 
-            font-size:0.5rem;
+            font-size:0.7;
             transition:border-color 0.5s;
             letter-spacing:1px;
         }
@@ -119,7 +113,7 @@
             width:100%;
             height:100%;
 
-            background-color:darkblue;
+            background-color:rgb(233, 66, 53);
             z-index:2;
 
             transition:all 0.5s;
@@ -159,17 +153,16 @@
         }        
 
         .livebtns a:hover span {
-            border-color:#42E1EE;
+            border-color:#3F7CC0;
         }
 
         .card__container:nth-of-type(2) .livebtns{
           background-color:#EA4335;
-        }
+        }        
 
-
-        /* #FBBC04 */ /* btn */
-        /* EA4335 */  /* door */
-        /* EA4335 */ /* btn-bottom */
+        /* RGB: (255, 186, 0) btn */
+        /* RGB: (233, 66, 53) door */
+        /* RGB: (0, 172, 71) green back btn */
     </style>
 </head>
 <body>
@@ -220,20 +213,9 @@
 
     <!-- intro to live section -->
     <div class="container mt-5 pt-5">
-        <h4 class="mt-5 pt-3 text-center">Salam, စာသင်ခန်းကို join လိုရပါတယ် ဗျ</h4>
-        <div class="row gy-4 card__container">
-          
-          <div class="col-md-6 col-12">          
-            <div class="text-center animate__animated animate__fadeIn">
-              <div class="livebtns">
-                <a href="https://us06web.zoom.us/j/6300065821?pwd=cVFWcnY0LzladUozMUtQeU05KzdpUT09" target="_blank" class="zoom-btn">
-                  <span>Zoom</span>
-                </a>
-              </div>
-            </div>            
-          </div>
-          
-          <div class="col-md-6 col-12">          
+        <h4 class="mt-5 pt-3 text-center">Please Join the <span class="text-success">Live Lecture</span> Here. Salam.</h4>
+        <div class="card__container">                            
+          <div class="">          
             <div class="text-center animate__animated animate__fadeIn">
               <div class="livebtns">
                 <a href="https://meet.google.com/pup-kwdk-wtc" target="_blank" class="meet-btn">
